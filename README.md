@@ -1,45 +1,38 @@
-# Microservicio nginx, nestjs, mongodb
+# Microservices with NestJS, MongoDB, and Nginx
 
-Descripción breve del proyecto.
+A project that demonstrates a microservices architecture using NestJS, MongoDB, and Nginx.
 
-## Requisitos
+## Requirements
 
 - Docker
 - Docker Compose
 
-## Instalación
+## Installation
 
-1. **Clona el repositorio:**
+1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    cd tu-repositorio
+    git clone https://github.com/NavarroEmiliano/microservices-nginx-nest-mongodb.git
+    cd microservices-nginx-nest-mongodb
     ```
 
-2. **Construye y levanta los servicios:**
+2. **Build and start the services:**
 
-    Asegúrate de tener Docker y Docker Compose instalados. Luego, ejecuta:
+    Make sure you have Docker and Docker Compose installed. Then, run:
 
     ```bash
     docker-compose up --build
     ```
 
-3. **Accede a los servicios:**
+3. **Access the services:**
 
-    - **Aplicación `store`:** Accede en [http://localhost:3004](http://localhost:3004)
-    - **Aplicación `users`:** Accede en [http://localhost:3006](http://localhost:3006)
-    - **Nginx (Proxy):** Accede en [http://localhost:80](http://localhost:80)
+    - **Store Application:** Access at [http://localhost:3004](http://localhost:3004)
+    - **Users Application:** Access at [http://localhost:3006](http://localhost:3006)
+    - **Nginx (Proxy):** Access at [http://localhost:80](http://localhost:80)
 
-## Configuración
+## Configuration
 
-- **Nginx:** La configuración de Nginx se encuentra en `nginx/nginx.config`. Puedes ajustar la configuración según sea necesario.
+- **Nginx:** The Nginx configuration can be found in `nginx/nginx.config`. You can adjust the configuration as needed.
 
-- **MongoDB:** Los datos de MongoDB se guardan en `./mongo/db`. Puedes ajustar los volúmenes en el archivo `docker-compose.yml` si es necesario.
+- **MongoDB:** MongoDB data is stored in `./mongo/db`. You can adjust the volumes in the `docker-compose.yml` file if needed.
 
-## Contribución
-
-Instrucciones sobre cómo contribuir al proyecto.
-
-## Licencia
-
-Información sobre la licencia del proyecto.
